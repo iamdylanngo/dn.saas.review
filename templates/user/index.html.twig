@@ -9,7 +9,10 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div {{ stimulus_controller('hello') }}>
+    </div>
+
+    {{ component('Alert') }}
 
     <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
     <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="{{ asset('media/image/among_us.png') }}" alt="Woman's Face" />
